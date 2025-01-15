@@ -1,7 +1,7 @@
 import {Routes, Route } from "react-router-dom";
 import { GlobalProvider } from "./Context/GlobalState";
 
-import Home from "./Pages/Home/Home.jsx";
+import Home from "./Pages/Home.jsx";
 import Login from "./Pages/Login.jsx";
 
 function App() {
