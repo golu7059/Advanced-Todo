@@ -1,8 +1,8 @@
-import Navbar from "../../components/Navbar"
+import Navbar from "../../Components/Navbar.jsx"
 import React, { useState, useEffect, useContext } from "react"
-import Sidebar from "../../Components/Sidebar"
+import Sidebar from "../../Components/Sidebar.jsx"
 import { GlobalContext } from "../../Context/GlobalState";
-import Todos from "../../Components/Todos";
+import Todos from "../../Components/Todos.jsx";
 
 import { Navigate } from "react-router-dom";
 

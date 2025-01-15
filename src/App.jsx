@@ -1,8 +1,8 @@
-import Home from "./Pages/Home/Home";
-import { GlobalContext, GlobalProvider } from "./Context/GlobalState";
-import Login from "./Pages/Login";
-
 import {Routes, Route } from "react-router-dom";
+import { GlobalProvider } from "./Context/GlobalState";
+
+import Home from "./Pages/Home/Home.jsx";
+import Login from "./Pages/Login.jsx";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       </Routes>
     </GlobalProvider>
   );
+  
 }
 
 export default App;
