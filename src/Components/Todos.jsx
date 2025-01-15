@@ -41,10 +41,7 @@ const Todos = () => {
   };
 
   const toggleImportant = (id) => {
-    const updatedTodos = state.todos.map((todo) =>
-      todo.id === id ? { ...todo, important: !todo.important } : todo
-    );
-    dispatch({ type: "ADD_TODO", payload: updatedTodos });
+  dispatch({ type: "TOGGLE_IMPORTANT", payload: id });
   };
 
   return (

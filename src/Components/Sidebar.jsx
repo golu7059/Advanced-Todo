@@ -20,7 +20,7 @@ const Sidebar = () => {
                     alt="User Profile"
                     className="rounded-full w-32 h-32 object-cover"
                 />
-                <h1 className="text-lg mt-2 font-bold text-[#357937] dark:text-white">Hey, Golu Kumar</h1>
+                <h1 className={`text-lg font-bold mt-2 ${state.theme === "dark" ? "text-green-600" : "text-green-600"}`}> Golu Kumar</h1>
             </div>
 
             {/* Navigation Links */}

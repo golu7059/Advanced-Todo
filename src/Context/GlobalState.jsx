@@ -42,6 +42,15 @@ const globalReducer = (state, action) => {
                         : todo
                 ),
             };
+        case "TOGGLE_IMPORTANT":
+            return {
+                ...state,
+                todos: state.todos.map((todo) =>
+                    todo.id === action.payload
+                        ? { ...todo, important: !todo.important }
+                        : todo
+                ),
+            }
         case "REMOVE_TODO":
             return { ...state, todos: state.todos.filter(todo => todo.id !== action.payload) };
         default:
