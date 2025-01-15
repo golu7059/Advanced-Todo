@@ -16,13 +16,13 @@ Access the live application here: [Todos App Live](#)
 
 ## Screenshots
 
-![Home Page - Light Theme](#)
+![darkThemeScreenshot.png](https://raw.githubusercontent.com/golu7059/Advanced-Todo/main/public/lightThemeScreenshot.png)
 *Home page in light theme with tasks and completed section.*
 
-![Adding a Task](#)
-*Adding a new task to the todo list.*
+![Adding a Task](https://raw.githubusercontent.com/golu7059/Advanced-Todo/main/public/withoutSideBar.png)
+*Adding a new task to the todo list and the page without sidebar.*
 
-![Home Page - Dark Theme](#)
+![Home Page - Dark Theme](https://raw.githubusercontent.com/golu7059/Advanced-Todo/main/public/darkThemeScreenshot.png)
 *Home page in dark theme for better accessibility.*
 
 ## Setup Instructions
@@ -39,7 +39,7 @@ Follow these steps to set up and run the application locally:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/todos-app.git
+   git clone https://github.com/golu7059/Advanced-Todo.git
    cd todos-app
    ```
 
@@ -52,7 +52,7 @@ Follow these steps to set up and run the application locally:
    ```bash
    npm start
    ```
-   This command starts the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   This command starts the app in development mode. Open [http://localhost:5173/](http://localhost:5173/) to view it in the browser.
 
 4. **Build for Production**
    ```bash
@@ -77,30 +77,16 @@ Deploy your application using your preferred free hosting service. Here's an exa
 3. **Provide Live URL**
    Once deployed, you will receive a live URL for the application.
 
-## Project Structure
-
-```plaintext
-src/
-├── components/
-│   ├── Todos.js          # Main Todos component
-├── context/
-│   ├── GlobalContext.js  # Context API setup
-├── styles/
-│   ├── App.css           # Styling for the application
-├── App.js                # Main app entry point
-├── index.js              # ReactDOM entry point
-```
-
 ## Technologies Used
 
 - **Frontend**: React, Context API
 - **Icons**: React Icons
 - **Styling**: TailwindCSS
-- **Hosting**: Vercel (or any preferred hosting service)
+- **Hosting**: Vercel
 
 ## Contributing
 
-Contributions are welcome! If you have ideas or bug fixes, feel free to fork the repository and submit a pull request.
+This is a internship Assignment project. Build in short duration of time . So , Contributions are welcome! If you have ideas or bug fixes, feel free to fork the repository and submit a pull request.
 
 ## License
 
