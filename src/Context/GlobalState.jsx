@@ -15,12 +15,18 @@ const initialState = {
         { id: 5, task: "Update portfolio", completed: true, important: false },
         { id: 6, task: "Apply for an internship", completed: false, important: true },
         { id: 7, task: "Do a coding challenge", completed: false, important: false },
-    ]
+    ],
+    isAuthenticated: false,
+    user: null, // User object
 };
 
 // Reducer function to handle state updates
 const globalReducer = (state, action) => {
     switch (action.type) {
+        case "LOGIN_SUCCESS":
+            return { ...state, isAuthenticated: true, user: action.payload };
+        case "LOGOUT":
+            return { ...state, isAuthenticated: false, user: null };
         case "TOGGLE_SIDEBAR":
             return { ...state, isSidebarVisible: !state.isSidebarVisible };
         case "TOGGLE_THEME":

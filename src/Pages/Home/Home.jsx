@@ -2,13 +2,17 @@ import Navbar from "../../components/Navbar"
 import React, { useState, useEffect, useContext } from "react"
 import Sidebar from "../../Components/Sidebar"
 import { GlobalContext } from "../../Context/GlobalState";
-import AddToDo from "../../Components/AddTodo";
 import Todos from "../../Components/Todos";
-import TodoDetails from "../../Components/TodoDetails";
+
+import { Navigate } from "react-router-dom";
 
 const Home = () => {
     const {state , dispatch} = useContext(GlobalContext);
 
+    const isLoggedIn = state.isAuthenticated;
+    if (!isLoggedIn) {
+        return <Navigate to="/login" />;
+    }
     const handleToggleSidebar = () => {
         dispatch({type:"TOGGLE_SIDEBAR"})
     }
@@ -19,6 +23,8 @@ const Home = () => {
             <div className="w-full flex flex-row ">
             {state.isSidebarVisible && <Sidebar className="px-10"/>}
             <Todos/>
+
+            {/* I have created the component , But It was not cler from the figma that when (at click) to display this component  */}
             {/* <TodoDetails/> */}
             </div>
         </div>
